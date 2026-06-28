@@ -368,34 +368,6 @@ git push origin feature/AmazingFeature
 
 5. Open a Pull Request
 
----
-
-# 📸 Screenshots
-
-## 🏠 Landing Page
-
-![Landing Page](./screenshots/landing.png)
-
----
-
-## 👤 Customer Onboarding
-
-![Onboarding](./screenshots/onboarding.png)
-
----
-
-## 📊 Dashboard
-
-![Dashboard](./screenshots/dashboard.png)
-
----
-
-## 🎨 Theme Customizer
-
-![Theme Customizer](./screenshots/theme-customizer.png)
-
----
-
 # 📄 License
 
 This project was developed as part of the **Teyzix Core Internship (June Batch)** — **Task FE-4**.
@@ -406,7 +378,7 @@ This project was developed as part of the **Teyzix Core Internship (June Batch)*
 
 **Abbas Manzoor**
 
-- GitHub URL:
+- GitHub URL:https://github.com/abbasmanzoor/ScaleFlow-SaaS.git
 - Email : abbasmanzoor277@gmail.com
 
 ---
