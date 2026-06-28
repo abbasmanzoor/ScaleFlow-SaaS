@@ -1,75 +1,417 @@
-# React + TypeScript + Vite
+````markdown
+# 🚀 ScaleFlow – Modern SaaS Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="./screenshots/landing.png" alt="ScaleFlow Banner" width="100%" />
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <strong>A modern, responsive, and feature-rich SaaS platform built with React, TypeScript, Tailwind CSS, and Vite.</strong>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  ScaleFlow showcases a professional SaaS landing page, multi-step customer onboarding, an analytics dashboard preview, and various interactive UI components with smooth animations and full responsiveness.
+</p>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 🌐 Landing Page
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The landing page is designed to provide an engaging first impression with modern UI and interactive sections.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🚀 Beautiful Hero Section
+  - Attractive headline
+  - Call-to-Action buttons
+  - Trust badges
+  - User statistics
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 📊 Product Overview
+  - Product highlights
+  - Key metrics
+  - Visual representation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- ⚡ Interactive Features Section
+  - 6 animated feature cards
+  - Hover effects
+  - Responsive layout
 
+- 💬 Testimonials Slider
+  - 8 customer reviews
+  - Auto-sliding every 2 seconds
+  - Forward & backward loop animation
+
+- 💰 Pricing Plans
+  - Starter
+  - Professional
+  - Enterprise
+  - Monthly / Yearly billing toggle
+
+- 🧮 Pricing Calculator
+  - Live price estimation
+  - User-based pricing
+  - Billing cycle support
+
+- ❓ FAQ Section
+  - Accordion style
+  - 6 frequently asked questions
+
+- 📩 Contact Form
+  - Professional design
+  - Form validation
+  - Toast notifications
+
+- 📌 Footer
+  - Dark theme
+  - Useful links
+  - Copyright
+
+---
+
+## 👤 Customer Onboarding Portal
+
+A complete 5-step onboarding experience.
+
+### Steps
+
+1. Personal Information
+2. Company Details
+3. Team Setup
+4. Select Plan
+5. Review & Submit
+
+### Features
+
+- ✅ Multi-step form
+- ✅ Progress bar
+- ✅ Real-time validation
+- ✅ Success page
+- ✅ LocalStorage persistence
+- ✅ Data recovery after page refresh
+
+---
+
+## 📊 Dashboard Preview
+
+A modern analytics dashboard including:
+
+### Analytics Cards
+
+- Revenue
+- Active Users
+- New Customers
+- Growth Rate
+
+### Recent Activity
+
+- Team activity feed
+- User avatars
+- Latest updates
+
+### Upcoming Tasks
+
+- High Priority
+- Medium Priority
+- Low Priority
+
+### User Profile
+
+- Profile information
+- Current subscription plan
+- Edit profile option
+
+---
+
+## 🎁 Bonus Features
+
+- 🌙 Dark / Light Mode
+- 🎨 Theme Customizer
+- 🎨 Primary Color Switcher
+- 🔤 Font Size Customization
+- 📈 Interactive Pricing Calculator
+- 🎬 Framer Motion Animations
+- 📱 Progressive Web App (PWA)
+- ⬆️ Back To Top Button
+- 🔔 Toast Notifications
+- ⌨️ Keyboard Accessibility
+- ♿ Focus Trapping
+- 📱 Fully Responsive Design
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|----------|
+| React 18 | UI Library |
+| TypeScript | Type Safety |
+| Vite | Build Tool |
+| Tailwind CSS | Styling |
+| React Router | Routing |
+| Framer Motion | Animations |
+| Heroicons | Icons |
+
+---
+
+# 📁 Project Structure
+
+```text
+src/
+│
+├── components/
+│   ├── dashboard/
+│   │   ├── AnalyticsCards.tsx
+│   │   ├── RecentActivity.tsx
+│   │   ├── UpcomingTasks.tsx
+│   │   └── UserProfile.tsx
+│   │
+│   ├── layout/
+│   │   ├── Navbar.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── onboarding/
+│   │   ├── OnboardingLayout.tsx
+│   │   ├── ProgressBar.tsx
+│   │   ├── Step1_PersonalInfo.tsx
+│   │   ├── Step2_CompanyDetails.tsx
+│   │   ├── Step3_TeamSetup.tsx
+│   │   ├── Step4_SelectPlan.tsx
+│   │   ├── Step5_ReviewSubmit.tsx
+│   │   └── SuccessPage.tsx
+│   │
+│   ├── sections/
+│   │   ├── Hero.tsx
+│   │   ├── ProductOverview.tsx
+│   │   ├── Features.tsx
+│   │   ├── Testimonials.tsx
+│   │   ├── Pricing.tsx
+│   │   ├── PricingCalculator.tsx
+│   │   ├── FAQ.tsx
+│   │   └── Contact.tsx
+│   │
+│   └── ui/
+│       ├── Container.tsx
+│       ├── SectionTitle.tsx
+│       ├── LoginModal.tsx
+│       ├── ThemeCustomizer.tsx
+│       └── BackToTop.tsx
+│
+├── context/
+│   ├── ThemeContext.tsx
+│   └── ToastContext.tsx
+│
+├── pages/
+│   ├── OnboardingPage.tsx
+│   ├── DashboardPage.tsx
+│   └── ProfilePage.tsx
+│
+├── App.tsx
+├── main.tsx
+└── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Prerequisites
+
+Make sure you have installed:
+
+- Node.js (v16 or above)
+- npm or yarn
+
+---
+
+## Installation
+
+### Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+### Navigate to project
+
+```bash
+cd scaleflow
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm run dev
+```
+
+Open your browser:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# 📦 Production Build
+
+Build the project
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+# 📱 Progressive Web App (PWA)
+
+ScaleFlow includes complete Progressive Web App support.
+
+### Build
+
+```bash
+npm run build
+```
+
+### Serve
+
+```bash
+npx serve -s dist
+```
+
+Open:
 
 ```
+http://localhost:3000
+```
+
+Then verify:
+
+Chrome DevTools
+
+Application → Manifest
+
+Application → Service Workers
+
+---
+
+# 🎨 Theme Customizer
+
+Users can personalize the application using the Theme Customizer.
+
+### Available Options
+
+- 🌙 Dark / Light Mode
+- 🎨 Primary Color
+
+  - Blue
+  - Purple
+  - Green
+  - Red
+  - Amber
+
+- 🔤 Font Size
+
+  - Small
+  - Medium
+  - Large
+
+All preferences are automatically saved in **LocalStorage** and restored on future visits.
+
+---
+
+# 🛣️ Routes
+
+| Route | Description |
+|--------|-------------|
+| `/` | Landing Page |
+| `/onboarding` | Customer Onboarding |
+| `/dashboard` | Dashboard Preview |
+| `/profile` | Profile Page |
+
+---
+
+# 🤝 Contributing
+
+Contributions are always welcome!
+
+1. Fork the repository
+
+2. Create your feature branch
+
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add Amazing Feature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature/AmazingFeature
+```
+
+5. Open a Pull Request
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Landing Page
+
+![Landing Page](./screenshots/landing.png)
+
+---
+
+## 👤 Customer Onboarding
+
+![Onboarding](./screenshots/onboarding.png)
+
+---
+
+## 📊 Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
+## 🎨 Theme Customizer
+
+![Theme Customizer](./screenshots/theme-customizer.png)
+
+---
+
+# 📄 License
+
+This project was developed as part of the **Teyzix Core Internship (June Batch)** — **Task FE-4**.
+
+---
+
+# 👨‍💻 Author
+
+**Abbas Manzoor**
+
+- GitHub URL:
+- Email : abbasmanzoor277@gmail.com
+
+---
+
+<p align="center">
+Made with ❤️ using React, TypeScript, Tailwind CSS & Vite
+</p>
+````
